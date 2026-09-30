@@ -3,7 +3,7 @@ import os, sqlite3, io, csv, joblib, numpy as np
 from datetime import datetime, timedelta
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
-from physics import *
+from backend.physics import *
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "database", "raider_ai.db"); MODEL = os.path.join(ROOT, "models", "healthy_digital_twin.pkl")
