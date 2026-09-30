@@ -128,7 +128,7 @@ def validate(d):
         out[k] = v
     return out
 
-@app.get("/api/current")
+@app.get(fetch('https://riderai1888-7.onrender.com/api/current'))
 @guard
 def current():
     if request.args.get("peek") != "1" or sim.lasta is None: sim.tick()
