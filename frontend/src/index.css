@@ -1,0 +1,14 @@
+:root{--bg:#0b0f17;--card:#141b28;--line:#243047;--tx:#e6ecf5;--mut:#8b9ab3;--acc:#38bdf8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:Inter,Segoe UI,system-ui,sans-serif}
+.app{display:flex;min-height:100vh}.side{width:220px;background:#0e1420;border-right:1px solid var(--line);padding:16px;position:sticky;top:0;height:100vh}
+.side h1{font-size:20px;margin:0}.side small{color:var(--mut);display:block;margin-bottom:18px}
+.side button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--mut);padding:10px 12px;border-radius:8px;cursor:pointer;font-size:14px}
+.side button.on,.side button:hover{background:#1b2537;color:var(--tx)}.main{flex:1;padding:22px;min-width:0}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(380px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}.card h3{margin:0 0 10px;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.big{font-size:28px;font-weight:700}.mut{color:var(--mut);font-size:13px}.badge{padding:4px 12px;border-radius:99px;font-weight:700;font-size:13px;color:#fff}
+button.b{background:var(--acc);color:#04121c;border:0;padding:10px 16px;border-radius:8px;font-weight:700;cursor:pointer;margin:4px 6px 4px 0}button.b.s{background:#243047;color:var(--tx)}button.b.r{background:#ef4444;color:#fff}
+input{background:#0b0f17;border:1px solid var(--line);color:var(--tx);padding:9px;border-radius:8px;width:100%}label{font-size:12px;color:var(--mut);display:block;margin:8px 0 4px}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:7px 6px;border-bottom:1px solid var(--line);text-align:left}
+.err{background:#3b1216;border:1px solid #ef4444;color:#fecaca;padding:10px 14px;border-radius:8px;margin-bottom:12px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+h2{margin:0}.login{max-width:340px;margin:12vh auto;text-align:center}@media(max-width:760px){.app{flex-direction:column}.side{width:100%;height:auto;position:static;display:flex;flex-wrap:wrap}.side h1,.side small{width:100%}.side button{width:auto}}
